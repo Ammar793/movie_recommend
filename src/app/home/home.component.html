@@ -1,0 +1,21 @@
+<app-top-nav></app-top-nav>
+<div class="container-fluid">
+    <app-sidebar [clicked] = "clicked" ></app-sidebar>
+
+    <hr>
+<br>
+<div id= 'ads' class="row" style = "background-color:#FFD464">
+  <div class="col-md-12  offset-md-2" >
+<app-voting></app-voting>
+</div>
+
+</div>
+
+    <div class="row" style="box-shadow: 0px -4px 3px #888888;background-color:#1253A4;">
+        <div class="col-lg-10 offset-lg-2">
+                <app-suggestions  (onClickImg) = "clickedImg($event)" [image]="image" [movieData]="movieData" [Suggestions]="Suggestions" ></app-suggestions>
+
+        </div>
+    </div>
+
+</div>

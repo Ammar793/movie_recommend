@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Codejam</title>
+  <base href="./">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1128905243892451',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB9t3-MUALfMLnIY314yl9ylCscwkQGJzo",
+      authDomain: "codejam-379f8.firebaseapp.com",
+      databaseURL: "https://codejam-379f8.firebaseio.com",
+      storageBucket: "codejam-379f8.appspot.com",
+      messagingSenderId: "908933232658"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+<body>
+  <app-root>Loading...</app-root>
+</body>
+</html>

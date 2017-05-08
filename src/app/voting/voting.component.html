@@ -1,0 +1,13 @@
+<div tabindex="0" on-mouseover = "mouseOver($event)" on-mouseleave = "mouseLeave($event)" (keydown)="handleKeyDown($event)">
+  <br>
+<div class="col-md-12 "> </div>
+
+<br><br>
+          <div class="col-md-12" id = "parent"  >
+            <div class="col-xs-2" style="text-align:right"> <img src = "assets/images/down.jpg" style="margin-top: 100px"  height = "50px">  <h3>Disliked</h3></div>
+            <div class="col-xs-4" style="text-align:center"><img src="assets/images/heart.jpg" height = "40px"><h3>Loved!</h3><br><br><img [@imageMove]="state" id = {{imageNumber}} src = "{{getImg()}}" height = "300px">  <h3>haven't seen</h3> </div>
+            <div class="col-xs-4"><img src = "assets/images/up.jpg" style="margin-top: 100px"  height = "50px"> <h3>Liked</h3> </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>

@@ -1,0 +1,6 @@
+<div style="text-align:center; color:#FFFFFF"><h2>HAL'S SUGGESTIONS</h2></div>
+<div >
+<div *ngFor = "let imagez of image" (update)= "generateImgArray()">
+<img  (change)= "changed()" id = "{{imagez[0]}}" (click)= "fireClickedEvent($event)" src="{{imagez[1]}}" width="100" style = "margin: 5px;float:left;cursor: pointer; cursor: hand;" alt="...">
+</div>
+</div>
